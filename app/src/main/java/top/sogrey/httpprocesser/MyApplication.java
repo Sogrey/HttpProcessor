@@ -2,9 +2,8 @@ package top.sogrey.httpprocesser;
 
 import android.app.Application;
 
-import top.sogrey.httpprocesser.httpprocessor.HttpHelper;
+import top.sogrey.http.processor.HttpHelper;
 import top.sogrey.httpprocesser.httpprocessor.VolleyProcessor;
-import top.sogrey.httpprocesser.httpprocessor.XUtilsProcessor;
 
 /**
  * 描述：

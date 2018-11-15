@@ -1,9 +1,7 @@
-package top.sogrey.httpprocesser.httpprocessor;
+package top.sogrey.http.processor;
 
 import android.util.Log;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.Map;
 
 /**

@@ -8,9 +8,10 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Map;
 
+import top.sogrey.http.processor.HttpCallback;
+import top.sogrey.http.processor.HttpHelper;
 import top.sogrey.httpprocesser.bean.BaseData;
-import top.sogrey.httpprocesser.httpprocessor.HttpCallback;
-import top.sogrey.httpprocesser.httpprocessor.HttpHelper;
+import top.sogrey.httpprocesser.httpprocessor.MyHttpCallback;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         params.put("mcode", "70:FE:DF:8B:20:BA:98:2F:21:1B:67:06:F4:3D:62:B5:7A:A5:80:AD;com.baidu.baidulocationdemo");
         params.put("ak", "pVTtPBAsLq38z4Mm77azNU7G");
         HttpHelper.obtain().post("http://api.map.baidu.com/geocoder/v2/",
-                params, new HttpCallback<BaseData>() {
+                params, new MyHttpCallback<BaseData>() {
                     @Override
                     protected void onSuccess(BaseData objResult) {
                         Toast.makeText(MainActivity.this,objResult.getStatus()+"",Toast.LENGTH_LONG).show();

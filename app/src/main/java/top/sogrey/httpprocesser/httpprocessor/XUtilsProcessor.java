@@ -8,6 +8,9 @@ import org.xutils.x;
 
 import java.util.Map;
 
+import top.sogrey.http.processor.ICallback;
+import top.sogrey.http.processor.IHttpProcessor;
+
 /**
  * 描述：xutils
  * Created by Sogrey on 2018/11/15.

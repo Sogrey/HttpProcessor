@@ -1,4 +1,4 @@
-package top.sogrey.httpprocesser.httpprocessor;
+package top.sogrey.http.processor;
 
 /**
  * 描述：通用回调接口
